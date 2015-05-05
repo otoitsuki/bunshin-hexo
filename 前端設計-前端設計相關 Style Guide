@@ -21,7 +21,7 @@
 像是Android、iOS等平台或系統都一定會推出Style Guide，讓開發者（特別是設計師）有成套可以遵循的風格和規則。
 不過近來很多大型網站也會公開自己網站的Style Guide，這些Style Guide對於前端設計研究也是相當有幫助。據說沒看過Style Guide就不能自">
   
-    <link rel="alternative" href="/atom.xml" title="文學少年與神話少女" type="application/atom+xml">
+    <link rel="alternative" href="http://feeds.feedburner.com/otoitsuki" title="文學少年與神話少女" type="application/atom+xml">
   
   
     <link rel="icon" href="/favicon.png">
@@ -29,6 +29,18 @@
   <link rel="stylesheet" href="/css/style.css" type="text/css">
   <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
   
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12631833-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
 </head>
 <body>
   <div id="container">
@@ -43,7 +55,7 @@
 		<ul>
 			<li><a href="/">Home</a></li><li><a href="/archives">Archives</a></li>
 			<li><a id="nav-search-btn" class="nav-icon" title="Search"></a></li>
-			<li><a href="/atom.xml" id="nav-rss-link" class="nav-icon" title="RSS Feed"></a></li>
+			<li><a href="http://feeds.feedburner.com/otoitsuki" id="nav-rss-link" class="nav-icon" title="RSS Feed"></a></li>
 		</ul>
 	</nav>
 	<div id="search-form-wrap">

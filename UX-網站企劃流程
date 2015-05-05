@@ -21,7 +21,7 @@
 裡面也有從書或文章上學習，或是研究其他案例得到的內容，預計會隨著我自己的學習與經驗補充更多細節，有空也會做實際文件sample分享。因為個人經驗還很不足的關係，有任何質疑或缺點都歡迎提出。
 前言首先要說的是，網站企劃流程非常 case by case 。整個流程與產出文件的類型、數量和精細度（詳盡度），都會因為很多原因而有所不同。通常影響企劃流程最大">
   
-    <link rel="alternative" href="/atom.xml" title="文學少年與神話少女" type="application/atom+xml">
+    <link rel="alternative" href="http://feeds.feedburner.com/otoitsuki" title="文學少年與神話少女" type="application/atom+xml">
   
   
     <link rel="icon" href="/favicon.png">
@@ -29,6 +29,18 @@
   <link rel="stylesheet" href="/css/style.css" type="text/css">
   <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
   
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12631833-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
 </head>
 <body>
   <div id="container">
@@ -43,7 +55,7 @@
 		<ul>
 			<li><a href="/">Home</a></li><li><a href="/archives">Archives</a></li>
 			<li><a id="nav-search-btn" class="nav-icon" title="Search"></a></li>
-			<li><a href="/atom.xml" id="nav-rss-link" class="nav-icon" title="RSS Feed"></a></li>
+			<li><a href="http://feeds.feedburner.com/otoitsuki" id="nav-rss-link" class="nav-icon" title="RSS Feed"></a></li>
 		</ul>
 	</nav>
 	<div id="search-form-wrap">

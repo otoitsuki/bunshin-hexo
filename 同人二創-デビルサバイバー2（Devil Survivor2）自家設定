@@ -21,7 +21,7 @@
 主人公設定牧上黎華（まきかみれいか）  
 個性隨和好相處，很重視朋友、夥伴之間的感情。相較於女生來比較習慣和男生相處。由於名字很像女孩子的關係，小時候時常被人嘲笑欺負，不過個人倒是完全不在意。喜歡日式料理，最近喜歡的食物是某人做的茶碗蒸XD擁">
   
-    <link rel="alternative" href="/atom.xml" title="文學少年與神話少女" type="application/atom+xml">
+    <link rel="alternative" href="http://feeds.feedburner.com/otoitsuki" title="文學少年與神話少女" type="application/atom+xml">
   
   
     <link rel="icon" href="/favicon.png">
@@ -29,6 +29,18 @@
   <link rel="stylesheet" href="/css/style.css" type="text/css">
   <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
   
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12631833-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
 </head>
 <body>
   <div id="container">
@@ -43,7 +55,7 @@
 		<ul>
 			<li><a href="/">Home</a></li><li><a href="/archives">Archives</a></li>
 			<li><a id="nav-search-btn" class="nav-icon" title="Search"></a></li>
-			<li><a href="/atom.xml" id="nav-rss-link" class="nav-icon" title="RSS Feed"></a></li>
+			<li><a href="http://feeds.feedburner.com/otoitsuki" id="nav-rss-link" class="nav-icon" title="RSS Feed"></a></li>
 		</ul>
 	</nav>
 	<div id="search-form-wrap">
