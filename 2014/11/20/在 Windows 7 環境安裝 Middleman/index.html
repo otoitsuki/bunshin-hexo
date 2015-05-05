@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>在 Windows 7 環境安裝 Middleman | 文學少年與神話少女</title>
+  <meta name="viewport" content="width=device-width">
+  <meta name="description" content="起因是因為我想要用autoprefixer，但是因為fire.app在windows的環境下讓我沒辦法直接裝。因此就把腦筋動到用Middleman上去。
+然而眾所皆知，MAC上只需要一行$ gem i middleman解決的東西，在windows上都是鬼打牆。   
+奮鬥好幾天後終於把環境搞定，決定將這些鬼打牆後得到的事蹟分享出來，希望對他人有所幫助。
+方法一：直接安裝適用者：非常有人品的人。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="在 Windows 7 環境安裝 Middleman">
+<meta property="og:url" content="http://otoitsuki.info/2014/11/20/在 Windows 7 環境安裝 Middleman/index.html">
+<meta property="og:site_name" content="文學少年與神話少女">
+<meta property="og:description" content="起因是因為我想要用autoprefixer，但是因為fire.app在windows的環境下讓我沒辦法直接裝。因此就把腦筋動到用Middleman上去。
+然而眾所皆知，MAC上只需要一行$ gem i middleman解決的東西，在windows上都是鬼打牆。   
+奮鬥好幾天後終於把環境搞定，決定將這些鬼打牆後得到的事蹟分享出來，希望對他人有所幫助。
+方法一：直接安裝適用者：非常有人品的人。">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="在 Windows 7 環境安裝 Middleman">
+<meta name="twitter:description" content="起因是因為我想要用autoprefixer，但是因為fire.app在windows的環境下讓我沒辦法直接裝。因此就把腦筋動到用Middleman上去。
+然而眾所皆知，MAC上只需要一行$ gem i middleman解決的東西，在windows上都是鬼打牆。   
+奮鬥好幾天後終於把環境搞定，決定將這些鬼打牆後得到的事蹟分享出來，希望對他人有所幫助。
+方法一：直接安裝適用者：非常有人品的人。">
+  
+    <link rel="alternative" href="/atom.xml" title="文學少年與神話少女" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  
+</head>
+<body>
+  <div id="container">
+    <div class="mobile-nav-panel">
+	<i class="icon-reorder icon-large"></i>
+</div>
+<header id="header">
+	<h1 class="blog-title">
+		<a href="/">文學少年與神話少女</a>
+	</h1>
+	<nav class="nav">
+		<ul>
+			<li><a href="/">Home</a></li><li><a href="/archives">Archives</a></li>
+			<li><a id="nav-search-btn" class="nav-icon" title="Search"></a></li>
+			<li><a href="/atom.xml" id="nav-rss-link" class="nav-icon" title="RSS Feed"></a></li>
+		</ul>
+	</nav>
+	<div id="search-form-wrap">
+		<form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="q" value="site:http://otoitsuki.info"></form>
+	</div>
+</header>
+    <div id="main">
+      <article id="post-在 Windows 7 環境安裝 Middleman" class="post">
+	<footer class="entry-meta-header">
+		<span class="meta-elements date">
+			<a href="/2014/11/20/在 Windows 7 環境安裝 Middleman/" class="article-date">
+  <time datetime="2014-11-19T16:00:00.000Z" itemprop="datePublished">2014-11-20</time>
+</a>
+		</span>
+		<span class="meta-elements author">Itsuki Lin</span>
+		<div class="commentscount">
+			
+		</div>
+	</footer>
+	
+	<header class="entry-header">
+		
+  
+    <h1 class="article-title entry-title" itemprop="name">
+      在 Windows 7 環境安裝 Middleman
+    </h1>
+  
+
+	</header>
+	<div class="entry-content">
+		
+    	<p>起因是因為我想要用autoprefixer，但是因為fire.app在windows的環境下讓我沒辦法直接裝。<br>因此就把腦筋動到用Middleman上去。</p>
+<p>然而眾所皆知，MAC上只需要一行<code>$ gem i middleman</code>解決的東西，在windows上都是鬼打牆。   </p>
+<p>奮鬥好幾天後終於把環境搞定，決定將這些鬼打牆後得到的事蹟分享出來，希望對他人有所幫助。</p>
+<h3 id="方法一：直接安裝">方法一：直接安裝</h3><p>適用者：非常有人品的人。</p>
+<p>1. 安裝RubyInstaller（1.9.3），裝完後安裝devkit。  </p>
+<p>devkit的安裝可以參考這篇：<a href="http://lee.logdown.com/posts/165890/ruby-on-windows-7-to-install-ruby-on-rails" target="_blank" rel="external">http://lee.logdown.com/posts/165890/ruby-on-windows-7-to-install-ruby-on-rails</a></p>
+<p>2. 安裝middleman，在cmd裡面打<code>$ gem middleman</code>。  </p>
+<p>我自己的情況是裝起來後能build，但不能跑watch，所以請見方法二：</p>
+<h3 id="方法二：用虛擬電腦安裝（VirtualBOX+Vagrant）">方法二：用虛擬電腦安裝（VirtualBOX+Vagrant）</h3><p>1. 安裝Virtual Box4.3.12，因為目前最新版4.3.16版本有BUG不能跑 </p>
+<p>2. 安裝RubyInstaller（1.9.3），裝完後安裝devkit，同方法一。</p>
+<p>3. 在cmd裡面打 <code>$ gem i vagrant</code>。 </p>
+<p>Vagrant其實就是讓人可以製作跟使用「虛擬電腦懶人包」、「一鍵安裝虛擬電腦」的東西。<br>每個懶人包都是一個box，可以在網路上下載別人做好的box安裝。   只要環境沒問題（VM版本等等都沒打架），放給他裝就會迅速裝好一台可以用的虛擬電腦。</p>
+<p>4. 用git抓回下面的BOX，打開VirtualBOX界面，然後到該repo 的src目錄下打 <code>$ vagrant up</code>啟動電腦：  </p>
+<p><a href="https://github.com/prismic/middleman-vagrant" target="_blank" rel="external">https://github.com/prismic/middleman-vagrant</a></p>
+<p>BOX如其名，是個已經包好middleman環境的虛擬電腦。<br><code>$ vagrant up</code>語法是用來啟動虛擬電腦的語法，啟動前要先把Virtual BOX的界面打開才會跑。</p>
+<h4 id="寫給對git和cmd不熟的人的安裝與啟動方法：">寫給對git和cmd不熟的人的安裝與啟動方法：</h4><ul>
+<li>按「Download the zip」，下載回來解壓縮。</li>
+<li>打開解壓縮檔進到「src」資料夾，複製路徑，到cmd裡面打 <code>$ cd 【剛才複製的路徑】</code>，這樣就會進到該路徑下面。</li>
+<li>打開Virtual BOX程式，先丟在一旁不管他。</li>
+<li>回CMD打 <code>$ vagrant up</code></li>
+</ul>
+<p>5. 成功啟動電腦後，再來要用SSH連線使用middleman。<br>請想成「要使用虛擬電腦的CMD來操控middleman」。 </p>
+<p>直接打 <code>$ vagrant ssh</code>，通常都會收到錯誤訊息（欸  </p>
+<h4 id="解決方案：">解決方案：</h4><p>因為要用SSH連線的關係，所以需要安裝SSH軟體。<br>我是用putty這套軟體，所以除了安裝putty以外，還要安裝外掛去讀putty的SSH鍵 。</p>
+<p><code>$ vagrant plugin install vagrant-multi-putty</code></p>
+<p>6. 通通裝好後，用puttygen做一個private key，更名為<code>insecure_private_key.ppk</code>，</p>
+<p>存在<code>C:\Users\【你的使用者名稱】\\.vagrant.d</code>下面</p>
+<p>7. 然後再回CMD打 <code>$ vagrant ssh</code>，看一下錯誤訊息。 </p>
+<p>他會教你說要去putty設置host name、port和帳號再連線，</p>
+<p>這邊其實可以只設host name跟port，連上後再打帳號和密碼（均為vagrant）</p>
+<p>8. 感動的收工<br>SSH成功登入後，打 <code>cd src</code>進到src的目錄下，這個目錄就是和上面src相同目錄，只要在這邊打<code>middleman server</code>，就可以架起middleman的server了！  </p>
+<h4 id="方法三：用_jRuby_裝">方法三：用 jRuby 裝</h4><p>之所以會有方法三，是因為windows不支援NFS，也就是雖然livereload可以運作，但是因為檔案系統的關係，檔案變動也沒辦法watch到 ＝ 不會自動更新Orz</p>
+<p>middleman作者表示，這問題不在middleman身上，要看VirtualBox那邊可不可能改變程式控制共享資料夾的設定。</p>
+<p>因為這樣，所以方法二成功後我就去研究其他的方法。然後發現用jRuby裝一樣可以一鍵搞定。</p>
+<p>下載jRuby裝完後（不管是用1.9.3或是2.0.0版本都OK），在cmd輸入<code>jRuby -S i middleman</code>就收工了。</p>
+<p>但是，jRuby的環境下也一樣不能用LiveReload…………………</p>
+<p>（似乎是跟guard-livereload與jRuby不合有關，但相關資料太少了）</p>
+<h4 id="結論">結論</h4><ol>
+<li>雖然只要有心，還是可以在 windows 7 裝 Middleman ，但 LiveReload 的問題至今不管用哪個方法都無解。</li>
+</ol>
+<p>目前推論，可能跳槽研究Grant或gulp會好一點的感覺………</p>
+<ol>
+<li>如果只是想跟我一樣用 autoprefixer + fire.app。<br>可以考慮直接裝 autoprefixer-sublime （爆</li>
+</ol>
+
+    
+	</div>
+	<footer class="entry-footer">
+		<div class="entry-meta-footer">
+			<span class="category">
+				
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/前端設計/">前端設計</a>
+  </div>
+
+			</span>
+			<span class="tags">
+				
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Middleman/">Middleman</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/前端設計/">前端設計</a></li></ul>
+
+			</span>
+		</div>
+	</footer>
+	
+    
+<nav id="article-nav">
+  
+    <a href="/2015/01/11/RGBA 構思 Thinking Structure (2015:01:11) 筆記/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          RGBA 構思 Thinking Structure (2015/01/11) 筆記
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2014/11/09/Windows 轉到 Mac OSX 上的軟體替代清單/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">
+        
+          Windows 轉到 Mac OSX 上的軟體替代清單
+        
+      </div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+
+
+    </div>
+    <div class="mb-search">
+  <form action="//google.com/search" method="get" accept-charset="utf-8">
+    <input type="search" name="q" results="0" placeholder="Search">
+    <input type="hidden" name="q" value="site:otoitsuki.info">
+  </form>
+</div>
+<footer id="footer">
+	<h1 class="footer-blog-title">
+		<a href="/">文學少年與神話少女</a>
+	</h1>
+	<span class="copyright">
+		&copy; 2015 Itsuki Lin<br>
+		Modify from <a href="http://sanographix.github.io/tumblr/apollo/" target="_blank">Apollo</a> theme, designed by <a href="http://www.sanographix.net/" target="_blank">SANOGRAPHIX.NET</a><br>
+		Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+	</span>
+</footer>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js" type="text/javascript"></script>
+  </div>
+</body>
+</html>

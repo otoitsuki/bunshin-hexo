@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>RGBA 構思 Thinking Structure (2015/01/11) 筆記 | 文學少年與神話少女</title>
+  <meta name="viewport" content="width=device-width">
+  <meta name="description" content="活動名稱：構思 Thinking Structurehttp://rgba.kktix.cc/events/tscss
+
+建造世界奇觀前，先打好地基吧！SHENG-LIunfold 前端設計師
+https://speakerdeck.com/shengli1989/tscss-manage-css
+易管理的css
+容易理解，打開資料夾可以看的懂
+容易定位，不管多龐大，在要修時找的到
+易維護，要修改">
+<meta property="og:type" content="article">
+<meta property="og:title" content="RGBA 構思 Thinking Structure (2015/01/11) 筆記">
+<meta property="og:url" content="http://otoitsuki.info/2015/01/11/RGBA 構思 Thinking Structure (2015:01:11) 筆記/index.html">
+<meta property="og:site_name" content="文學少年與神話少女">
+<meta property="og:description" content="活動名稱：構思 Thinking Structurehttp://rgba.kktix.cc/events/tscss
+
+建造世界奇觀前，先打好地基吧！SHENG-LIunfold 前端設計師
+https://speakerdeck.com/shengli1989/tscss-manage-css
+易管理的css
+容易理解，打開資料夾可以看的懂
+容易定位，不管多龐大，在要修時找的到
+易維護，要修改">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="RGBA 構思 Thinking Structure (2015/01/11) 筆記">
+<meta name="twitter:description" content="活動名稱：構思 Thinking Structurehttp://rgba.kktix.cc/events/tscss
+
+建造世界奇觀前，先打好地基吧！SHENG-LIunfold 前端設計師
+https://speakerdeck.com/shengli1989/tscss-manage-css
+易管理的css
+容易理解，打開資料夾可以看的懂
+容易定位，不管多龐大，在要修時找的到
+易維護，要修改">
+  
+    <link rel="alternative" href="/atom.xml" title="文學少年與神話少女" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  
+</head>
+<body>
+  <div id="container">
+    <div class="mobile-nav-panel">
+	<i class="icon-reorder icon-large"></i>
+</div>
+<header id="header">
+	<h1 class="blog-title">
+		<a href="/">文學少年與神話少女</a>
+	</h1>
+	<nav class="nav">
+		<ul>
+			<li><a href="/">Home</a></li><li><a href="/archives">Archives</a></li>
+			<li><a id="nav-search-btn" class="nav-icon" title="Search"></a></li>
+			<li><a href="/atom.xml" id="nav-rss-link" class="nav-icon" title="RSS Feed"></a></li>
+		</ul>
+	</nav>
+	<div id="search-form-wrap">
+		<form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="q" value="site:http://otoitsuki.info"></form>
+	</div>
+</header>
+    <div id="main">
+      <article id="post-RGBA 構思 Thinking Structure (2015:01:11) 筆記" class="post">
+	<footer class="entry-meta-header">
+		<span class="meta-elements date">
+			<a href="/2015/01/11/RGBA 構思 Thinking Structure (2015:01:11) 筆記/" class="article-date">
+  <time datetime="2015-01-10T16:00:00.000Z" itemprop="datePublished">2015-01-11</time>
+</a>
+		</span>
+		<span class="meta-elements author">Itsuki Lin</span>
+		<div class="commentscount">
+			
+		</div>
+	</footer>
+	
+	<header class="entry-header">
+		
+  
+    <h1 class="article-title entry-title" itemprop="name">
+      RGBA 構思 Thinking Structure (2015/01/11) 筆記
+    </h1>
+  
+
+	</header>
+	<div class="entry-content">
+		
+    	<ul>
+<li>活動名稱：構思 Thinking Structure<br><a href="http://rgba.kktix.cc/events/tscss" target="_blank" rel="external">http://rgba.kktix.cc/events/tscss</a></li>
+</ul>
+<h2 id="建造世界奇觀前，先打好地基吧！">建造世界奇觀前，先打好地基吧！</h2><p>SHENG-LI<br>unfold 前端設計師</p>
+<p><a href="https://speakerdeck.com/shengli1989/tscss-manage-css" target="_blank" rel="external">https://speakerdeck.com/shengli1989/tscss-manage-css</a></p>
+<h3 id="易管理的css">易管理的css</h3><ol>
+<li>容易理解，打開資料夾可以看的懂</li>
+<li>容易定位，不管多龐大，在要修時找的到</li>
+<li>易維護，要修改時不會跟其他的打架</li>
+</ol>
+<h3 id="如何打造">如何打造</h3><ol>
+<li>SASS</li>
+<li>由大化小，按功能或部位拆解成多個檔案，每份檔案專注做一件事</li>
+<li>建立分類，按照自己規劃方式分類，目的讓css一目了然</li>
+</ol>
+<h3 id="公司自製_Starter_（改mvcss等等來的）">公司自製 Starter （改mvcss等等來的）</h3><ol>
+<li>Setup <ul>
+<li>可跨專案使用</li>
+<li>normalize,base(h1,行距，字體）</li>
+<li>變數</li>
+<li>layout最:大寬度，左右兩欄排版</li>
+</ul>
+</li>
+<li>Components 命名非常重要 <ul>
+<li>Button</li>
+<li>Form</li>
+</ul>
+</li>
+<li>Partial 部件樣式 <ul>
+<li>Header</li>
+<li>Footer</li>
+</ul>
+</li>
+<li>Page 特殊頁面排版放這 <ul>
+<li>About（只有這頁有三欄）</li>
+<li>Contact</li>
+<li>等等</li>
+</ul>
+</li>
+</ol>
+<ul>
+<li><p>其他細節： style guide,命名規範</p>
+</li>
+<li><p>爭議性： 有爭議的先從Partial開始寫。 特殊頁面的header寫在page裡。 特殊部件寫在header裡，ex:bigheader</p>
+</li>
+<li><p>命名訣竅：</p>
+</li>
+</ul>
+<p>可以分成兩種</p>
+<ol>
+<li>抽象grid</li>
+<li>直呼其名Post,news</li>
+</ol>
+<h2 id="Pinkoi_的_RWD">Pinkoi 的 RWD</h2><p>ADAM WANG Pinkoi 前端工程師</p>
+<p><a href="http://www.slideshare.net/adamp3wang/pinkoi-rwd-rgba" target="_blank" rel="external">http://www.slideshare.net/adamp3wang/pinkoi-rwd-rgba</a></p>
+<ul>
+<li>Pinkoi最重要三件事：逛買問。</li>
+<li>任何時候裝置要好體驗，要快</li>
+<li><p>RWD首先考慮是類型，是app（以互動為主）還是page（是以資訊為主）？（是以資訊為主）？</p>
+</li>
+<li><p>手機上一二事</p>
+<ul>
+<li>漢堡選單，為何廣泛使用？因為是次要的擴展導覽，可以先藏起來</li>
+<li>幾乎不會用tab</li>
+<li>圖片不能太多</li>
+<li>動畫，一秒裡面有60畫格也必須很順暢，業界標準</li>
+</ul>
+</li>
+<li><p>Redirect問題</p>
+<ul>
+<li>Seo不良</li>
+<li>複製網站</li>
+</ul>
+</li>
+</ul>
+<p>解決方案：使用RESS：同個網站，針對不同裝置吐不同的碼 （Modernizr.touch，看有沒有觸控功能吐不同的碼。但會誤判）</p>
+<h3 id="技術相關實做方法">技術相關實做方法</h3><ul>
+<li><p>環境區隔 桌面jQuery, 手機用Zepto，或pure Js</p>
+</li>
+<li><p>LocalStorage 使用者瀏覽紀錄，讓大部份儲存在使用者端手機上玩，最後再存在server Ex 最近瀏覽過的網頁等等</p>
+</li>
+<li><p>History.pushStatus 讓使用者在同個頁面相同網址，進行部分讀取，加速ux，還是可以用上一頁</p>
+</li>
+<li><p>Lazy load</p>
+</li>
+<li><p>Fluid layout</p>
+</li>
+<li><p>一次性網頁就用RWD不用RESS，內容重複高，不太用互動</p>
+</li>
+</ul>
+<h3 id="RWD實戰心得">RWD實戰心得</h3><ul>
+<li>用%處理長度，保持等比</li>
+<li>考慮retina問題，目前img srcset,picture支援度差，用mq做比較好 <ul>
+<li>用 padding-bottom 算圖片高度，算出長寬比EX1:0.44 <ul>
+<li>background:contain;</li>
+<li>padding-botton:44％;</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Font size calc(50px-4vw)</li>
+<li>Think Prototype</li>
+<li>RWD email 是個地獄，只能踹跟error，找不到好方法哭哭</li>
+</ul>
+<h3 id="測試">測試</h3><p>Chrome dev tool 用模擬器，做mobile都用手機 </p>
+<en-media style="height: auto;" width="2592" height="1936" type="image/jpeg" hash="a77dd5af7edbfda87f013c5305019e2b">
+
+<h2 id="KKBOX_官網樣式管理的現況以及近期計畫">KKBOX 官網樣式管理的現況以及近期計畫</h2><p>HSINYU CHOU F2E@KKBOX</p>
+<ul>
+<li>主要用OOCSS因為很簡易</li>
+<li>用bootstrap+自行處理 modules +從內容發展的 Components</li>
+<li>由編輯企畫決定區塊頁面如何呈現、前端規劃區塊分類</li>
+<li><p>藉由辨認「內容類型」分組</p>
+<ul>
+<li>音樂資訊：聲音，影片，文字（專欄等</li>
+<li>人的資訊：歌手，一起聽台長，一般用戶</li>
+<li>社群活動：一起聽，撥歌動態</li>
+<li>操作介面：播放，清單，關注，分享</li>
+</ul>
+</li>
+</ul>
+<p>上述區塊形成共同語言，企畫會把它當成是一個發想的單位。在同個軌道上前進，快速上手討論。</p>
+<h3 id="Components的命名">Components的命名</h3><ul>
+<li>Albums <en-media style="height: auto;" width="2592" height="1936" type="image/jpeg" hash="4e85f3c0027bdf309b2987f01b80d153"></en-media></li>
+<li>Chart</li>
+<li>Article</li>
+<li>Artist-info</li>
+</ul>
+<p>Resuable 每個 web view 都能用，只要是相同內容頁面，html就應該要一樣</p>
+<h3 id="區域微調">區域微調</h3><ul>
+<li>Name space class <ul>
+<li>用母元素決定下面components 環境調整</li>
+</ul>
+</li>
+<li>Stacking class <ul>
+<li>加 class 做變性state狀態的改變</li>
+</ul>
+</li>
+</ul>
+<p>上述架構好處：</p>
+<ul>
+<li>搬到哪都能用</li>
+<li>容易溝通與協作</li>
+</ul>
+<p>上述壞處：</p>
+<ul>
+<li>很多層class，拉高權重</li>
+<li>評估是否要用BEM，要搭配JS使用</li>
+</ul>
+<h3 id="Style_guide">Style guide</h3><ul>
+<li>統一跨平台</li>
+<li>避免新元件出來還是錯刀</li>
+<li>改版時的規格文件，告訴我們有哪些是要做的</li>
+<li>用Hologram <en-media style="height: auto;" width="2592" height="1936" type="image/jpeg" hash="b8817371e8e0f57657034b231e792f18">
+
+</en-media></li>
+</ul>
+<p>未來不確定會不會改版BEM，掙扎中</p>
+<h3 id="其他">其他</h3><ul>
+<li>泰文最長的語系：處理方式是改翻譯，改版面設計，讓資料容的下</li>
+<li>Style Guide：用Generator可以在SASS註解，直接產生</li>
+</ul>
+<h2 id="前端工程師眼中的_CSS_framework">前端工程師眼中的 CSS framework</h2><p>TonyQ 大大</p>
+<h3 id="Grid">Grid</h3><ul>
+<li>歷史講古時間：早期960 Grid 沒有行動版呀，所以bootstrap會紅</li>
+<li>用閱讀的資料流去設計css grid</li>
+<li>要切幾格？很重要</li>
+<li>挑選framework先看grid</li>
+</ul>
+<h3 id="Form">Form</h3><ul>
+<li>挑選framework第二個看form</li>
+<li>客戶最想要做好的東西，互動性最高，關注性最高</li>
+<li><p>細節討論</p>
+<ol>
+<li>格子千萬要夠大 手指太大了，手機上點小框框起來很痛苦，很容易點錯</li>
+<li>Modal Dialog</li>
+<li>表單驗證：因為要設計邏輯，不該歸framework處理，每個表單的設計邏輯都不同 愛用：jQuery驗證，還有一個是jQ外掛？</li>
+<li>framework只管錯誤alert樣式</li>
+</ol>
+</li>
+</ul>
+<h3 id="Table">Table</h3><ul>
+<li>扣掉div以外table最常用</li>
+<li>格線，表頭，顧一下就好</li>
+</ul>
+<h3 id="eco_system_←重要">eco system ←重要</h3><ul>
+<li>只要一個晚上，就可以把bootstrap theme改成自己要的頁面</li>
+<li>從現有的pattern直接發展，改pattern改出自己的風格</li>
+<li>一個東西活的不夠久，不會有pattern，這是社群的力量</li>
+<li>做UI時要考慮一致性，和其他人的UI一致性，讓使用者感到熟悉，快速使用</li>
+<li>抓到pattern的特徵，就會讓人了解要怎樣用</li>
+<li>選一個fw可以解決多少問題是挑framework的要點</li>
+</ul>
+<h3 id="改bootstrap">改bootstrap</h3><ul>
+<li>不要動原始碼，加class就好</li>
+<li>不要一開始就想reuse，等到需要reuse時再去reuse</li>
+<li>Css的封裝性很頭痛</li>
+<li>Shadow zone？←根本估不到這一定是我筆記錯了</li>
+</ul>
+<h2 id="上午PANEL">上午PANEL</h2><h3 id="Style_guide_如何落實，class命名等">Style guide 如何落實，class命名等</h3><ul>
+<li>先建後拆，告訴他已經有輪子了不要再建一次</li>
+<li>嚴格規範css位置，知道現在的元件有哪些狀態，不要影響到其他的文件就好</li>
+<li>開一份文件共同維護style guide，取得共識。</li>
+<li>指定共用framework</li>
+</ul>
+<h3 id="app和網頁版的各自的出發點？">app和網頁版的各自的出發點？</h3><ul>
+<li>網頁版給初心者，免洗EX：遊戲等也放網頁版</li>
+<li>App給老客戶</li>
+<li>兩個都有適用場景</li>
+</ul>
+<h3 id="Kkbox_靈感來源">Kkbox 靈感來源</h3><ul>
+<li>看競爭對手</li>
+<li>看業界規範，購物車該怎樣就怎樣</li>
+<li>技術上多看國外學校</li>
+<li>團隊不斷與客戶討論得到最好的</li>
+<li>設計很難跟靈感扯上關係。參考好的網站，刪去不好的部分</li>
+<li>Y2b的話，盡快做雛形，測試，修改</li>
+<li>多逛codepen等參考他人是怎麼做的</li>
+</ul>
+<h3 id="網站寬度是用哪種單位">網站寬度是用哪種單位</h3><ul>
+<li>跟Bootstrap共進退</li>
+<li>layout用％，設計用px</li>
+<li>Components 用px</li>
+<li>分類判斷 <ul>
+<li>大圖片背景percent</li>
+<li>人頭小圖固定px</li>
+</ul>
+</li>
+<li>Padding margin 用px，避免撐爆，還有要加rwd考量，同樣px電腦手機看起來感覺不同</li>
+</ul>
+<h3 id="商品模組圖片長寬比">商品模組圖片長寬比</h3><ul>
+<li>Padding-bottom跟mq走，不同中斷點，不同比例</li>
+</ul>
+<h3 id="網站無障礙怎麼做">網站無障礙怎麼做</h3><ul>
+<li>內容網站比較好做</li>
+<li>點tab的順序可以考慮做</li>
+<li>用裸露的html判斷內容流可不可讀</li>
+<li>沒用過盲人瀏覽器就是盲人摸象，但有力氣配合就配合</li>
+<li>有專家給意見，以專家意見做</li>
+</ul>
+<h3 id="語義化網站">語義化網站</h3><ul>
+<li>就算是需要reuse的網站，每個layout是獨立的話，就不需要語義化</li>
+<li>一個partial需不需要重複？依照不同狀況判斷</li>
+<li>Ex：new-list這個命名已經很好了，不用動</li>
+<li>Css語義化指只是為了方便維護，但Html語義化非常重要</li>
+<li>Html語義是架構，h1是標題，不是用來變大的樣式</li>
+<li>Oocss創始者說：現在可以追求視覺語義化</li>
+</ul>
+<h2 id="CSS架構如何加速功能開發">CSS架構如何加速功能開發</h2><p>Oliver<br>Faria Systems Ltd. 前端工程師</p>
+<p><a href="http://www.slideshare.net/ChongLin/css-structure" target="_blank" rel="external">http://www.slideshare.net/ChongLin/css-structure</a></p>
+<ul>
+<li>把前端常用的module抽出來，基於bootstrap去擴充</li>
+<li>Master UI Kit <a href="https://dribbble.com/shots/1501436-Master-UI-Kit" target="_blank" rel="external">https://dribbble.com/shots/1501436-Master-UI-Kit</a></li>
+<li>在github做一個文件style guide，做這個最主要是為了各國工程師合作</li>
+<li>Css一個頁面帶兩個，application和contact，作分流</li>
+<li>每個客製化partial裡面會分成hd和bd兩部份（頭和身體） .about-store .hd .bd</li>
+<li><p>Css 架構一開始就要做，還要持續一直做</p>
+</li>
+<li><p>跨國團隊要怎樣合作？ 在平台上討論，前端不動設計，但有衝突就去問PM，多討論</p>
+</li>
+</ul>
+<h2 id="國會無雙_–_大革命">國會無雙 – 大革命</h2><p>TOUNEKO<br>unfold 前端設計師</p>
+<ul>
+<li><p>以使用者為中心，重新思考</p>
+</li>
+<li><p>重新定義首頁，把賽事拆成賽前賽中賽後，定義這三種賽事</p>
+<ul>
+<li>前：預報</li>
+<li>中：直播</li>
+<li>後：報告</li>
+</ul>
+</li>
+<li><p>參考itunes的slider</p>
+<ul>
+<li>Tab: 用bootstrap的js，css自己刻</li>
+<li>Slider:自行修改slick.js</li>
+</ul>
+</li>
+<li><p>LiveBar 用CSS key frame，靈感來自NBA 先準備一張圖片，然後用keyframe讓他動</p>
+</li>
+<li><p>字體大小參考 iA.net 副標一律置中，小標置左</p>
+</li>
+<li><p>想邊看逐字稿邊看網站，參考TED網站設計 影片往下卷，會縮到右上角</p>
+</li>
+<li><p>參考twitter更改排版變簡潔，不會太多線條</p>
+</li>
+<li><p>參考twitterbot做自動落體dialog 用edge做設計，但自己寫code</p>
+</li>
+<li><p>放入大量阿草圖片，降低嚴肅感</p>
+</li>
+<li><p>客戶要求不合理，該怎麼辦？ 用正確的數據，去說服客戶，做出比較好的</p>
+</li>
+</ul>
+<h2 id="元件css參數化">元件css參數化</h2><p>SIMON PAI 普奇科技前端工程師</p>
+<ul>
+<li>統一設計 style guide</li>
+<li>統一實作 命名策略</li>
+</ul>
+<p>但如果你是元件集的創作者會碰到問題</p>
+<ul>
+<li>統一設計 <ul>
+<li>外觀一致性，但無法預測使用者會如何排列你的元件</li>
+</ul>
+</li>
+<li>統一設計 <ul>
+<li>Dry</li>
+</ul>
+</li>
+</ul>
+<h3 id="元件語義">元件語義</h3><p>Ex:分隔線的意義？分隔上下左右</p>
+<ul>
+<li>區隔 <ul>
+<li>Ex:容器box</li>
+</ul>
+</li>
+<li>操作</li>
+<li><p>狀態</p>
+<ul>
+<li>語義定義是你可以依他來設計</li>
+</ul>
+</li>
+<li>但必要時可以做取捨，依照不同情況不同狀況做取捨 <ul>
+<li>語義元素無法窮盡</li>
+</ul>
+</li>
+<li>做到70.80啪就很好，剩下硬幹</li>
+</ul>
+<h3 id="建立Demo">建立Demo</h3><ul>
+<li>外觀盡量展示出來</li>
+<li>外觀一致放一起</li>
+</ul>
+<h3 id="CSS_命名策略">CSS 命名策略</h3><ul>
+<li>表意 <ul>
+<li>Z-panel</li>
+</ul>
+</li>
+<li><p>表象</p>
+<ul>
+<li><p>Red</p>
+</li>
+<li><p>CSS是樣式和DOM的合約 最終都是將外觀值賦予到意上</p>
+</li>
+<li><p>統一設計，統一實作</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="別亂來交給我們來">別亂來交給我們來</h2><p>大熊 BEAR GSS 叡揚資訊人因設計部</p>
+<p><a href="http://www.slideshare.net/desbearli/gss-fed" target="_blank" rel="external">http://www.slideshare.net/desbearli/gss-fed</a></p>
+<ul>
+<li>為了和不同團隊合作，建立規範</li>
+<li>設計部門整理出命名規則，參照bootstrap，並和工程部討論</li>
+<li>除了style guide以外，整理出UI Kit</li>
+<li>（命名參考） .wrapper .nav .list .detail</li>
+<li>系統軟體的設計，會對可用空間的最大寬度做限制</li>
+</ul>
+<h3 id="三欄設計：">三欄設計：</h3><ul>
+<li><p>方案1. 不能全用percent，左右固定寬度，中間做fluid。 且順序是 .col-left .col-right .col-center</p>
+</li>
+<li><p>方案2. Table cell</p>
+</li>
+<li><p>分案3. Inline block</p>
+</li>
+</ul>
+<h2 id="講個秘訣給沒參加_dotCSS/dotJS_的_Even">講個秘訣給沒參加 dotCSS/dotJS 的 Even</h2><p>HLB Dad of 2. Director@KKTIX</p>
+<h3 id="DotCSS_dotJS_歐洲最大的研討會">DotCSS dotJS 歐洲最大的研討會</h3><p>歐洲沒有人在週末辦研討會</p>
+<ul>
+<li>不用寫important的方法 <code>.disabled.disabled.disabled{}</code> 寫三次，增強權重，這樣就不用important</li>
+<li>Suitcss</li>
+</ul>
+<h2 id="下午Panel">下午Panel</h2><h3 id="如何進行UX?">如何進行UX?</h3><ul>
+<li>看客服信，看使用者需要的功能，企劃提出做，由設計師開始做</li>
+<li>分析標竿性網站，參考與使用</li>
+<li>看客戶的需求，與客戶討論，客戶的要求有沒有道理</li>
+</ul>
+<h3 id="自動化測試">自動化測試</h3><ul>
+<li>Selenium</li>
+<li>人力人工測試是基本款</li>
+</ul>
+<h3 id="多國語系建議作法">多國語系建議作法</h3><ul>
+<li>語系檔搞定。 <ul>
+<li>日文字用中文字體很怪，html還是要設lang，用適合的字體</li>
+</ul>
+</li>
+<li>由左到右或反過來，日期，貨幣等格式不同很麻煩，見招拆招</li>
+<li>用fire.app做partial改 <ul>
+<li>但是排版還是要分開處理</li>
+</ul>
+</li>
+</ul>
+<h3 id="目前公司吸引你的地方在哪？">目前公司吸引你的地方在哪？</h3><ul>
+<li>公司最美的風景是人</li>
+<li>跟國外的同事一起做事很有趣</li>
+<li>禮拜五共同研究日</li>
+<li>有挑戰，不太會加班</li>
+<li>對上面負責，老闆自由，下面的也會自己做好，只管issue不管人，部門福利好</li>
+<li>既鬆散，又凝聚</li>
+</ul>
+<hr>
+<h2 id="其他人的強大筆記">其他人的強大筆記</h2><p><a href="http://wcc723.github.io/css/2015/01/13/css-magic/" target="_blank" rel="external">http://wcc723.github.io/css/2015/01/13/css-magic/</a></p>
+</en-media>
+    
+	</div>
+	<footer class="entry-footer">
+		<div class="entry-meta-footer">
+			<span class="category">
+				
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/前端設計/">前端設計</a>
+  </div>
+
+			</span>
+			<span class="tags">
+				
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/RGBA/">RGBA</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SASS/">SASS</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/css架構/">css架構</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/前端設計/">前端設計</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/筆記/">筆記</a></li></ul>
+
+			</span>
+		</div>
+	</footer>
+	
+    
+<nav id="article-nav">
+  
+    <a href="/2015/01/12/網站企劃流程/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          網站企劃流程
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2014/11/20/在 Windows 7 環境安裝 Middleman/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">
+        
+          在 Windows 7 環境安裝 Middleman
+        
+      </div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+
+
+    </div>
+    <div class="mb-search">
+  <form action="//google.com/search" method="get" accept-charset="utf-8">
+    <input type="search" name="q" results="0" placeholder="Search">
+    <input type="hidden" name="q" value="site:otoitsuki.info">
+  </form>
+</div>
+<footer id="footer">
+	<h1 class="footer-blog-title">
+		<a href="/">文學少年與神話少女</a>
+	</h1>
+	<span class="copyright">
+		&copy; 2015 Itsuki Lin<br>
+		Modify from <a href="http://sanographix.github.io/tumblr/apollo/" target="_blank">Apollo</a> theme, designed by <a href="http://www.sanographix.net/" target="_blank">SANOGRAPHIX.NET</a><br>
+		Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+	</span>
+</footer>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js" type="text/javascript"></script>
+  </div>
+</body>
+</html>
