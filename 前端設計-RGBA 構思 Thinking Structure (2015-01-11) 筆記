@@ -13,9 +13,9 @@ https://speakerdeck.com/shengli1989/tscss-manage-css
 容易理解，打開資料夾可以看的懂
 容易定位，不管多龐大，在要修時找的到
 易維護，要修改">
-<meta property="og:type" content="website">
+<meta property="og:type" content="article">
 <meta property="og:title" content="RGBA 構思 Thinking Structure (2015/01/11) 筆記">
-<meta property="og:url" content="http://otoitsuki.info/前端設計-RGBA 構思 Thinking Structure (2015:01:11) 筆記">
+<meta property="og:url" content="http://otoitsuki.info/前端設計-RGBA 構思 Thinking Structure (2015-01-11) 筆記">
 <meta property="og:site_name" content="文學少年與神話少女">
 <meta property="og:description" content="活動名稱：構思 Thinking Structurehttp://rgba.kktix.cc/events/tscss
 
@@ -66,10 +66,10 @@ https://speakerdeck.com/shengli1989/tscss-manage-css
 	</div>
 </header>
     <div id="main">
-      <article id="post-RGBA 構思 Thinking Structure (2015:01:11) 筆記" class="post">
+      <article id="post-RGBA 構思 Thinking Structure (2015-01-11) 筆記" class="post">
 	<footer class="entry-meta-header">
 		<span class="meta-elements date">
-			<a href="/前端設計-RGBA 構思 Thinking Structure (2015:01:11) 筆記" class="article-date">
+			<a href="/前端設計-RGBA 構思 Thinking Structure (2015-01-11) 筆記" class="article-date">
   <time datetime="2015-01-10T16:00:00.000Z" itemprop="datePublished">2015-01-11</time>
 </a>
 		</span>
@@ -504,7 +504,7 @@ https://speakerdeck.com/shengli1989/tscss-manage-css
 			</span>
 			<span class="tags">
 				
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/RGBA/">RGBA</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SASS/">SASS</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/css架構/">css架構</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/前端設計/">前端設計</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/筆記/">筆記</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/rgba/">RGBA</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/sass/">SASS</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/css架構/">css架構</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/前端設計/">前端設計</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/筆記/">筆記</a></li></ul>
 
 			</span>
 		</div>
@@ -513,7 +513,7 @@ https://speakerdeck.com/shengli1989/tscss-manage-css
     
 <nav id="article-nav">
   
-    <a href="/UX-網站企劃流程" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/ux-網站企劃流程" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Newer</strong>
       <div class="article-nav-title">
         
