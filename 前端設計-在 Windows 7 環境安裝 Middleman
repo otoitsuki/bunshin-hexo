@@ -9,9 +9,9 @@
 然而眾所皆知，MAC上只需要一行$ gem i middleman解決的東西，在windows上都是鬼打牆。   
 奮鬥好幾天後終於把環境搞定，決定將這些鬼打牆後得到的事蹟分享出來，希望對他人有所幫助。
 方法一：直接安裝適用者：非常有人品的人。">
-<meta property="og:type" content="article">
+<meta property="og:type" content="website">
 <meta property="og:title" content="在 Windows 7 環境安裝 Middleman">
-<meta property="og:url" content="http://otoitsuki.info/2014/11/20/在 Windows 7 環境安裝 Middleman/index.html">
+<meta property="og:url" content="http://otoitsuki.info/前端設計-在 Windows 7 環境安裝 Middleman">
 <meta property="og:site_name" content="文學少年與神話少女">
 <meta property="og:description" content="起因是因為我想要用autoprefixer，但是因為fire.app在windows的環境下讓我沒辦法直接裝。因此就把腦筋動到用Middleman上去。
 然而眾所皆知，MAC上只需要一行$ gem i middleman解決的東西，在windows上都是鬼打牆。   
@@ -57,7 +57,7 @@
       <article id="post-在 Windows 7 環境安裝 Middleman" class="post">
 	<footer class="entry-meta-header">
 		<span class="meta-elements date">
-			<a href="/2014/11/20/在 Windows 7 環境安裝 Middleman/" class="article-date">
+			<a href="/前端設計-在 Windows 7 環境安裝 Middleman" class="article-date">
   <time datetime="2014-11-19T16:00:00.000Z" itemprop="datePublished">2014-11-20</time>
 </a>
 		</span>
@@ -145,7 +145,7 @@
     
 <nav id="article-nav">
   
-    <a href="/2015/01/11/RGBA 構思 Thinking Structure (2015:01:11) 筆記/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/前端設計-RGBA 構思 Thinking Structure (2015:01:11) 筆記" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Newer</strong>
       <div class="article-nav-title">
         
@@ -155,7 +155,7 @@
     </a>
   
   
-    <a href="/2014/11/09/Windows 轉到 Mac OSX 上的軟體替代清單/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/軟體工具-Windows 轉到 Mac OSX 上的軟體替代清單" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
       <div class="article-nav-title">
         

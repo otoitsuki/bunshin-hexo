@@ -12,9 +12,9 @@
 符號輸入方法有小小不太一樣。
 
 所以後來我採用香草輸入法＋新酷音套件。詳細安裝可以參">
-<meta property="og:type" content="article">
+<meta property="og:type" content="website">
 <meta property="og:title" content="Windows 轉到 Mac OSX 上的軟體替代清單">
-<meta property="og:url" content="http://otoitsuki.info/2014/11/09/Windows 轉到 Mac OSX 上的軟體替代清單/index.html">
+<meta property="og:url" content="http://otoitsuki.info/軟體工具-Windows 轉到 Mac OSX 上的軟體替代清單">
 <meta property="og:site_name" content="文學少年與神話少女">
 <meta property="og:description" content="近來因為換了Mac的關係，所以開始尋找一些免費實用軟體在Mac OSX上的替代軟體。這裡列出的都是系統管理等小工具程式，專業級的大咖程式當然就是乖乖付費的份。而非專業的大咖程式，像是瀏覽器等都有Mac版本，因此也就沒有列出來。
 新酷音（智慧型輸入法）用小麥輸入法代替，有小小的落差：
@@ -66,7 +66,7 @@
       <article id="post-Windows 轉到 Mac OSX 上的軟體替代清單" class="post">
 	<footer class="entry-meta-header">
 		<span class="meta-elements date">
-			<a href="/2014/11/09/Windows 轉到 Mac OSX 上的軟體替代清單/" class="article-date">
+			<a href="/軟體工具-Windows 轉到 Mac OSX 上的軟體替代清單" class="article-date">
   <time datetime="2014-11-08T16:00:00.000Z" itemprop="datePublished">2014-11-09</time>
 </a>
 		</span>
@@ -146,7 +146,7 @@
     
 <nav id="article-nav">
   
-    <a href="/2014/11/20/在 Windows 7 環境安裝 Middleman/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/前端設計-在 Windows 7 環境安裝 Middleman" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Newer</strong>
       <div class="article-nav-title">
         
@@ -156,7 +156,7 @@
     </a>
   
   
-    <a href="/2014/07/21/前端設計相關 Style Guide/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/前端設計-前端設計相關 Style Guide" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
       <div class="article-nav-title">
         
